@@ -121,7 +121,7 @@ int main()
     char* homeSubString;
 
 
-    // inifite loop that repeated prompts the user to enter a command
+    // inifite loop that repeatedly prompts the user to enter a command and then executes the command.
     while (1) {
         cwd = getcwd(cwdBuffer, BUFFSIZE);
         homeSubString = strstr(cwd, home);
