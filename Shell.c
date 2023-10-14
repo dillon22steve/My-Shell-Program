@@ -161,14 +161,8 @@ int main()
         // if user enters a non-empty command
         if (n > 1) {
             cmd[n-1] = '\0'; // replaces the final '\n' character with '\0' to make a proper string
- 
- 
-            // Lab 06 TODO: parse/tokenize cmd by space to prepare the
-            // command line argument array that is required by execvp().
-            // For example, if cmd is "head -n 1 file.txt", then the
-            // command line argument array needs to be
-            // ["head", "-n", "1", "file.txt", NULL].
- 
+
+          
             char* argsv[BUFFSIZE];
             char * inputFile, * outputFile;
             int numArgs = 0;
